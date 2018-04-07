@@ -2,6 +2,8 @@
 
 ```
 CLI BOT FOR VPS
-LAMGUAGE : PHP
+LANGUAGE : PHP
 POWER OF MadelineProto
 ```
+
+[!BOTER LOGO](http://storage.boter.xyz/photos/Boter.png)
