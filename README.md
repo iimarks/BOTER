@@ -1,2 +1,7 @@
-# boter
-CLI BOT - PHP
+# Boter
+
+```
+CLI BOT FOR VPS
+LAMGUAGE : PHP
+POWER OF MadelineProto
+```
