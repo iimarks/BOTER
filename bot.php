@@ -3,6 +3,7 @@
 if (!file_exists('madeline.php')) {
     copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
 }
+
 include 'madeline.php';
 
 $MadelineProto = new \danog\MadelineProto\API('session.madeline');
@@ -24,22 +25,26 @@ class EventHandler extends \danog\MadelineProto\EventHandler
         if (isset($update['message']['data']) && $update['message']['date'] + 5 < time()) {
             return;
         }
-
-        $message = isset($update['message']['message']) ? $update['message']['message'] : '';
        
-
+        $msg = isset($update['message']['message']) ? $update['message']['message'] : '';
+		$chatID = isset($update['message']['chatID']) ? $update['message']['chatID'] : '';
+		$userID = isset($update['message']['userID']) ? $update['message']['userID'] : '';
 
 try {
-  if ($message=="بوت"){
+	
+if ($msg == "بوت"){
       $this->messages->sendMessage([
       "peer"=>$update,
       "message"=>"البوت يعمل ... ✅",
       "parse_mode"=>"Markdown",
-      ]);
-  }
+    ]);
+}
+
+	
+	
 } catch (Exception $e) {
     echo$e->getMessage();
-    }
+	}
   }
 }
 
