@@ -6,4 +6,4 @@ LANGUAGE : PHP
 POWER OF MadelineProto
 ```
 
-![BOTER LOGO](http://storage.boter.xyz/photos/Boter.jpg)
+![BOTER LOGO](http://storage.boter.xyz/photos/Boter.png)
