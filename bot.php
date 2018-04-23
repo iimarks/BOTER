@@ -27,8 +27,6 @@ class EventHandler extends \danog\MadelineProto\EventHandler
         }
        
         $msg = isset($update['message']['message']) ? $update['message']['message'] : '';
-		$chatID = isset($update['message']['chatID']) ? $update['message']['chatID'] : '';
-		$userID = isset($update['message']['userID']) ? $update['message']['userID'] : '';
 
 try {
 	
